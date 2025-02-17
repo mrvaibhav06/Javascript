@@ -42,3 +42,25 @@ const myFunction = function () {
 console.log(muObj);
 console.log(heros);
 console.log(typeof heros);
+
+//=========================================
+
+//memory are the two type
+//  1.stack(primitive )=>stack me copy value milta hai
+// 2. Heap(non-primitive)=> heap me copy value nahi milti hai
+
+let myName = "Vaibhav";
+let anotherName = myName;
+anotherName = "Golu";
+console.log(myName);
+console.log(anotherName);
+
+let raj = {
+  email: "qwe33@gmail.com",
+  upi: "upi@ewe434",
+};
+let rohan = raj;
+rohan.email = "rohan@2233gmail,com";
+
+console.log(raj.email);
+console.log(rohan.email);
